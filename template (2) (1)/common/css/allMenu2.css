@@ -105,7 +105,7 @@
     height: 1px;
     background: #000;
     position: absolute;
-    left: -20%;
+    left: 20%;
 	top: -35px;
 	
 }
@@ -117,7 +117,7 @@
 	color: #000;
 	font-weight: 500;
 	margin-top: -50px;
-	padding-left: 30px;
+	padding-left: 80px;
 }
 .allMenu_wrap .all__title .all2 li a {
 	position: relative;
@@ -152,32 +152,118 @@
 	top: 65%;
 	left: 162px;
 }
-	.allMenu_wrap .all__desc .all__sns {
-		color: #7b7b7b;
-		font-size: 20px;
-		position: absolute;
-		top: 80%;
-		left: 150px;
-		width: 30%;
-	}
-	.allMenu_wrap .all__desc .all__sns ul li {
-		padding: 0 15px;
-		float: left;
-		position: relative;
-	}
-	.allMenu_wrap .all__desc .all__sns ul li:last-child::after {
-		content: none; 
-		padding-right: 0;
-	}
-	.allMenu_wrap .all__desc .all__sns ul li::after {
-		content: '';
+.allMenu_wrap .all__desc .all__sns {
+	color: #7b7b7b;
+	font-size: 15px;
+	position: absolute;
+	top: 80%;
+	left: 150px;
+	width: 30%;
+}
+.allMenu_wrap .all__desc .all__sns ul li {
+	padding: 0 15px;
+	float: left;
+	position: relative;
+}
+.allMenu_wrap .all__desc .all__sns ul li:last-child::after {
+	content: none; 
+	padding-right: 0;
+}
+.allMenu_wrap .all__desc .all__sns ul li::after {
+	content: '';
+	display: block;
+	width: 2.5px;
+	height: 2.5px;
+	border-radius: 50%;
+	background-color: #7b7b7b;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(50%, -50%);
+}
+.allmo {
+	display: none;
+}
+@media(max-width:1280px) {
+	.allMenu_wrap .allmo {
 		display: block;
-		width: 2.5px;
-		height: 2.5px;
-		border-radius: 50%;
-		background-color: #7b7b7b;
+		background-image: url(../images/allmo.png);
+		width: 100%;
+		height: 150px;
+		background-size: cover;
+		background-repeat: no-repeat;
 		position: absolute;
-		right: 0;
-		top: 50%;
-		transform: translate(50%, -50%);
+		bottom: 0;
 	}
+	.allMenu_wrap {
+		width: 100%;
+		height: auto;
+	}
+	.all_image {
+		display: none;
+	}
+	.allMenu_wrap .all__title {
+		width: calc(100% - 40px);
+		height: auto;
+		margin: 0 auto;
+		padding-top: 80px;
+	}
+	.allMenu_wrap .all__title .all__inner {
+		margin-left: 0;
+	}
+	.allMenu_wrap .all__title .all__inner > ul li .all1 .a_en  {
+		font-size: 30px;
+	}
+	.allMenu_wrap .all__title .all__inner > ul li .all1 .a_ko  {
+		font-size: 30px;
+		font-weight: 400;
+		left: 0;
+	}
+	.allMenu_wrap .all__close {
+		right: 20px;
+		top: 40px;
+	}
+	.allMenu_wrap .all__desc .all__sns {
+		font-size: 14px;
+		width: 100%;
+		position: sticky;
+		position: absolute;
+		left: 5px;
+		z-index: 99;
+		color: #fff;
+		margin-top: 60px;
+	}
+	.allMenu_wrap .all__desc .all__text {
+		font-size: 18px;
+		color: #fff;
+		left: 20px;
+		top: 80%;
+		z-index: 99;
+	}
+	.allMenu_wrap .circle {
+		margin-left: 30px;
+		right: 0;
+		z-index: 9;
+		top: 40%;
+	}
+	.allMenu_wrap .k {
+		margin-left: 85px;
+		margin-top: -35px;	
+	}
+	.allMenu_wrap .all__title .all2 {
+		left: 35px;
+	}
+	.allMenu_wrap .all__title .all2::before {
+		left: -35px;
+		top: 12px;
+		width: 24px;
+	}
+	.allMenu_wrap .all__title .all2 li {
+		margin-top: 0;
+		padding-left: 0;
+	}
+	.allMenu_wrap .all__title .all__inner > ul li .all1:hover .a_ko, 
+	.allMenu_wrap .all__title .all__inner > ul li .all1:hover .a_en{
+
+	}
+}
