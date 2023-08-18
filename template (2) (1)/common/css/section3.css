@@ -1,0 +1,170 @@
+#section3 {
+	width: 100%;
+	height: auto;
+	background-image: url(../images/se3_bg.png);
+	background-size: cover;
+	padding: 72px 0 148px;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#section3 .container {
+    width: 1594px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+#section3 .how {
+    width: 50%;
+	display: inline-block;
+    -webkit-text-stroke: 1.5px #000;
+    text-shadow: -15px -15px #fff;
+    font-weight: bold;
+	font-family: Cormorant Garamond;
+    font-size: 190px;
+    line-height: 1;
+    margin-bottom: 208px;
+    white-space: nowrap;
+    color: rgba(0,0,0,0);
+}
+#section3 .how p {
+	text-align: right;
+}
+#section3 .container .contact {
+	float: right;
+	font-size: 20px;
+	font-family: NotoSansKR;
+	position: relative;
+	margin-top: 168px;
+	padding-left: 260px;
+	font-weight: bold;
+}
+#section3 .container .contact .store {
+	width: 214px;
+    height: 90px;
+    border: 1.5px solid #000;
+	margin-bottom: 32px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 78px;
+    border-radius: 50%;
+}
+#section3 .container .contact .online {
+	width: 214px;
+	height: 78px;
+    margin: 15px 0;
+	border: 1.5px solid #000;
+    text-align: center;
+	line-height: 78px;
+    box-sizing: border-box;
+}
+#section3 .container .contact .online:hover + img {
+    transform: rotate(15deg);
+}
+#section3 .container .contact img {
+	position: absolute;
+    transform-origin: left top;
+	left: 0;
+	top: 35%;
+	transition: 0.5s ease;
+}
+#section3 .container .info {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+#section3 .container .info li {
+	width: 28.5%;
+	backdrop-filter: blur(5px);
+    position: relative;
+    padding: 60px 50px 50px;
+	border: 1.8px solid #000;
+	box-sizing: border-box;
+}
+#section3 .container .info li p {
+	margin-bottom: 127px;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: normal;
+	font-family: NotoSansKR;
+}
+
+#section3 .container .info li span {
+	font-size: 22px;
+	font-weight: bold;
+	font-family: NotoSansKR;
+
+}
+#section3 .container .info li::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+}
+
+@media (max-width: 1280px) {
+	#section3 {
+		width: 100%;
+		/* height: 723px; */
+		background-size: cover;
+		padding: 0;
+	}
+	#section3 .container {
+		max-width: calc(100% - 40px);
+		margin: 0 auto;
+		object-fit: cover;
+	}
+	#section3 .how {
+		font-size: 75px;
+		padding-top: 86px;
+		margin-bottom: 35px;
+	}
+	#section3 .how p {
+		text-align: right;
+		padding-left: 80%;
+	}
+	#section3 .container .contact {
+		margin-top: 0;
+	}
+	#section3 .container .contact .store {
+		width: 120px;
+		height: 45px;
+		font-size: 14px;
+		line-height: 3;
+	}
+	#section3 .container .contact .online {
+		width: 120px;
+		height: 45px;
+		font-size: 14px;
+		line-height: 3;
+	}
+	#section3 .container .contact img {
+		transform: rotate(15deg);
+		top: 40px;
+		left: 100px;
+		height: 30px;
+	}
+	#section3 .container .info {
+		display: block;
+		padding-top: 182px;
+	}
+	#section3 .container .info li {
+		width: 320px;
+		height: 220px;
+	}
+	#section3 .container .info li p {
+		margin-bottom: 0;
+		font-size: 14px;
+		padding-bottom: 91px;
+		
+	}
+	#section3 .container .info li span {
+		font-size: 18px;
+	}
+}

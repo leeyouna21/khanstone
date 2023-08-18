@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <link rel="stylesheet" href="common/css/common.css" />
+        
+        <script type="text/javascript" src="common/js/swiper.min.js"></script>
+        <script src="common/js/jquery.js"></script>
+        <script src="common/js/jquery-ui.js"></script>
+        <script src="common/js/common.js"></script>
+        <script>
+            $(function(){
+                console.log('hi');
+            });
+        </script>
+        <style>
+            #wrap {
+                width: 100%;
+                height: auto;
+            }
+            #main_header {
+            width: 100%;
+            height: 121px;
+            background: none;
+            position: relative;
+            z-index: 9999999;
+          }
+          #main_header .headerTop1 {
+            /* position: relative; */
+	          box-sizing: border-box;
+          }
+          #main_header .headerTop1 .all__menu {
+            width: 120px;
+            height: 50px;
+            z-index: 9999999;
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+            font-family: "Cormorant Garamond";
+            text-align: center;
+            color: #ffffff;
+          }
+          #main_header .headerTop1 .all__menu::before {
+            content: "Menu";
+            font-size: 20px;
+          }
+          #main_header .headerTop1 .all__menu ul {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 10px 22.5px;
+          }
+          #main_header .headerTop1 .all__menu ul::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 22.5px;
+            top: 0;
+            width: 1px;
+            height: 1px;
+            background: #000;
+          }
+          #main_header .headerTop1 #gnb {
+            box-sizing: border-box;
+          }
+          #main_header .headerTop1 #gnb .gnbWrap {
+            display: block;
+            margin-right: 200px;
+            text-align: right;
+            font-size: 18px;
+            font-weight: 500;
+          }
+          #main_header .headerTop1 #gnb .gnbWrap > li {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            box-sizing: border-box;
+            text-align: left;
+            z-index: 999;
+          }
+          #main_header .headerTop1 #gnb .gnbWrap > li > a {
+            position: relative;
+            display: block;
+            padding: 0 22px;
+            line-height: 120px;
+            font-family: "NotoSansKR";
+            font-size: 18px;
+            color: #ffffff;
+            box-sizing: border-box;
+          }
+          #main_header .headerTop1 #gnb .gnbWrap > li:hover {
+            transition-duration: 0.5s;
+          }
+          #main_header .headerTop1 #gnb .gnbWrap > li:hover .gnb__inner {
+            height: 85px; /*서브메뉴 li한개의 높이 50*4*/
+            transition-duration: 1s;
+          }
+          #main_header .headerTop1 #gnb .gnbWrap .gnb__inner{
+            color: #fff;
+            background: #3C3C3C;
+            font-size: 14px;
+            width: 100%;
+            height: 0px;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            text-align: center;
+            font-family: NotoSansKR;
+          }
+          #main_header .headerTop1 #gnb .gnbWrap .gnb__inner li {
+            margin-bottom: 5px;
+            margin-top: 16px;
+          }
+          #main_header .headerTop1 .ma__logo {
+            padding-top: 18px;
+            }
+          @media(max-width:1280px) {
+            #main_header {
+              width: 100%;
+              height: 61px;
+              /* padding-bottom: 30px; */
+              padding-top: 30px;
+            }
+            #main_header .headerTop1 .all__menu {
+              right: 20px;
+            }
+            #main_header .headerTop1 {
+              width: calc(100% - 40px);
+              margin: 0 auto;
+            }
+            #main_header .headerTop1 .ma__logo img{
+              width: 65px;
+              height: 61px;
+              position: absolute;
+              left: 20px;
+            }
+            #main_header .headerTop1 #gnb {
+              display: none;
+            }
+          } 
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="main_header">
+                <div class="headerTop1">
+                    <h1>
+                        <a href="#" class="ma__logo">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                        <a href="#" class="all__menu"></a>
+                        <div id="gnb">
+                            <ul class="gnbWrap">
+                              <li>
+                                <a href="#">칸스톤</a>
+                                <ul class="gnb__inner">
+                                  <li>
+                                    <a href="#">브랜드 소개</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                                  </li>
+                                </ul>
+                              </li>
+                              </li>
+                              <li>
+                                <a href="#">컬렉션</a>
+                                <ul class="gnb__inner">
+                                  <li>
+                                    <a href="#">브랜드 소개</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">갤러리</a>
+                                <ul class="gnb__inner">
+                                  <li>
+                                    <a href="#">브랜드 소개</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">구매방법</a>
+                                <ul class="gnb__inner">
+                                  <li>
+                                    <a href="#">브랜드 소개</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">고객지원</a>
+                                <ul class="gnb__inner">
+                                  <li>
+                                    <a href="#">브랜드 소개</a>
+                                  </li>
+                                  <li>
+                                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                    </h1>
+                </div>
+                <div class="allMenu_wrap">
+                    <div class="all_image">
+                        <div class="all__close"></div>
+                    </div>
+                    <div class="all__title">
+                        <div class="all__inner">
+                            <ul>
+                                <li>
+                                    <div class="all1">
+                                        <span class="a_en">Khanstone</span>
+                                        <span class="a_ko">칸스톤</span>
+                                    </div>
+                                    <ul class="all2">
+                                        <li>
+                                            <a href="#">브랜드 소개</a>
+                                            <a href="#">현대L&C</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="all1">
+                                        <span class="a_en">Collection</span>
+                                        <span class="a_ko">컬렉션</span>
+                                    </div>
+                                    <ul class="all2">
+                                        <li>
+                                            <a href="#">브랜드 소개</a>
+                                            <a href="#">현대L&C</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="all1">
+                                        <span class="a_en">Gallery</span>
+                                        <span class="a_ko">갤러리</span>
+                                    </div>
+                                    <ul class="all2">
+                                        <li>
+                                            <a href="#">브랜드 소개</a>
+                                            <a href="#">현대L&C</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="all1">
+                                        <span class="a_en">Purchase</span>
+                                        <span class="a_ko">구매방법</span>
+                                    </div>
+                                    <ul class="all2">
+                                        <li>
+                                            <a href="#">브랜드 소개</a>
+                                            <a href="#">현대L&C</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="all1">
+                                        <span class="a_en">Service</span>
+                                        <span class="a_ko">고객지원</span>
+                                    </div>
+                                    <ul class="all2">
+                                        <li>
+                                            <a href="#">브랜드 소개</a>
+                                            <a href="#">현대L&C</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="circle"></div>
+                    <div class="k"></div>
+                    <div class="all__desc">
+                        <div class="all__text">
+                            공간의 가치를<br>
+                        높이는 선택, 칸스톤
+                        </div>
+                        <div class="all__sns">
+                            <ul>
+                                <li>
+                                    <a href="#">현대L&C</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#">Youtube</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <main>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="././images/main1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="././images/main2-2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="././images/main2-3.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="././images/main2-4.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                  <div class="main__container">
+                    <div class="next__img">
+                      <img class="ne1" src="././images/main2-2.png" alt="">
+                      <img class="ne2" src="././images/main2-3.png" alt="">
+                      <img class="ne3" src="././images/main2-4.png" alt="">
+                      <img class="ne4" src="././images/main1.png" alt="">
+                    </div>
+                    <div class="main__text">
+                        <h3>공간의 가치를 높이는 선택</h3>
+                        <p>천연소재에 첨단기술을 더한 친환경 신소재로서<br>
+                            광택 및 표면강도, 내오염성이 우수할 뿐만 아니라<br>
+                            기존 석재 및 인조석과 비교할 때 월등한 품질과<br>
+                            아름다움을 가집니다.
+                        </p>
+                    </div>
+                    <div class="main__text1">
+                        <img src="/template (2) (1)/images/main.png" alt="">
+                    </div>
+                    <div class="main__text2">
+                        KHANSTONE that<br class="mo"> adds<br class="pc">
+                        value to the<br class="mo"> space of life
+                    </div>
+                </div>
+            </main>
+            <section id="section1">
+                <div class="secCon1">
+                    <p class="coll">#컬렉션</p>
+                </div>
+                <div class="spaceTab">
+                    <ul class="tabNav">
+                        <li class="home">주거공간</li>
+                        <div class="One">8</div>
+                        <li class="work">상업공간</li>
+                        <div class="One">8</div>
+                    </ul>
+                    <div class="tabContent">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="/template (2) (1)/images/sec1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="/template (2) (1)/images/sec2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="/template (2) (1)/images/sec3.png" alt=""></div>
+                                <div class="swiper-slide"><img src="/template (2) (1)/images/sec4.png" alt=""></div>
+                                <div class="swiper-slide"><img src="/template (2) (1)/images/sec5.png" alt=""></div>
+                                <div class="swiper-slide"><img src="/template (2) (1)/images/sec6.png" alt=""></div>
+                                <div class="swiper-slide"><img src="/template (2) (1)/images/sec7.png" alt=""></div>
+                                <div class="swiper-slide"><img src="/template (2) (1)/images/sec8.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="tab-2">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="/template (2) (1)/images/sec8.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="/template (2) (1)/images/sec7.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="/template (2) (1)/images/sec6.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="/template (2) (1)/images/sec5.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="/template (2) (1)/images/sec4.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="/template (2) (1)/images/sec3.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="/template (2) (1)/images/sec2.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="/template (2) (1)/images/sec1.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <section id="section2">
+                <div class="sec_desc">
+                    <div class="review">#칸스톤 리뷰</div>
+                    <div class="follow">#Follow me</div>
+                </div>
+                <div class="sec2_slide">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="imgWrap">
+                                    <img src="/template (2) (1)/images/se2_1.png" alt="">
+                                </div>
+                                <p class="desc1">주방의 변신으로<br>
+                                    건강 라이프를 실천합니다.</p>
+                                <span class="desc2">@그레이킴</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgWrap">
+                                    <img src="/template (2) (1)/images/se2_2.png" alt="">
+                                </div>
+                                <p class="desc1">주방의 변신으로<br>
+                                    건강 라이프를 실천합니다.</p>
+                                <span class="desc2">@그레이킴</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgWrap">
+                                    <img src="/template (2) (1)/images/se2_3.png" alt="">
+                                </div>
+                                <p class="desc1">주방의 변신으로<br>
+                                    건강 라이프를 실천합니다.</p>
+                                <span class="desc2">@그레이킴</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgWrap">
+                                    <img src="/template (2) (1)/images/se2_4.png" alt="">
+                                </div>
+                                <p class="desc1">주방의 변신으로<br>
+                                    건강 라이프를 실천합니다.</p>
+                                <span class="desc2">@그레이킴</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section3">
+                <div class="container">
+                    <div class="how">
+                        How  to
+                        <p>buy it</p>
+                    </div>
+                    <ul class="contact">
+                        <li class="store">
+                            <a href="#">#매장찾기</a>
+                        </li>
+                        <li class="online">
+                            <a href="#">#온라인 상담</a>
+                        </li>
+                        <img src="./images/arrow.png" alt="">
+                    </ul>
+                    <ul class="info">
+                        <li class="search">
+                            <a href="#">
+                                <p>가까운 매장을 찾아 제품을<br>
+                                    직접 체험할 수 있습니다.
+                                </p>
+                                <span>매장 안내</span>
+                            </a>
+                        </li>
+                        <li class="online">
+                            <a href="#">
+                                <p>상업용 전문가와 상담을<br>
+                                    진행하시길 원하십니까?
+                                </p>
+                                <span>상업용 구매</span>
+                            </a>
+                        </li>
+
+                        <li class="offline">
+                            <a href="#">
+                                <p>칸스톤 코디네이터와 상담하여<br>
+                                    직접 제품을 구매할 수 있습니다.
+                                </p>
+                                <span>직접구매</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <footer>  
+                <a href="#" class="arrow2">
+                    <img src="./images/arrow2.png" alt="">
+                </a>
+                <div class="footer_container">
+                    <div class="circle"></div>
+                    <div class="k"></div>
+                    <h1 class="foot__text">
+                        고객의 소중한 공간에<br>
+                        가치를 더합니다.
+                    </h1>
+                    <a href="#" class="foot__logo">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <div class="footer__desc">
+                        <div class="f__title">
+                            <div class="footer__title">칸스톤</div>
+                            <div class="footer__title">컬렉션</div>
+                            <div class="footer__title">갤러리</div>
+                            <div class="footer__title">구매방법</div>
+                            <div class="footer__title">고객지원</div>
+                        </div>
+                        <div class="f__inner">
+                            <div class="footer__inner">주소. 05340 서울특별시 강동구 천호대로 1077</div>
+                            <div class="footer__inner">이스트센트럴타워빌딩 (주)현대엘앤씨</div>
+                            <div class="footer__inner">대표번호. 080-729-8272</div>
+                            <div class="footer__inner">팩스. 02-6364-7408</div>
+                        </div>
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li>
+                                <a href="#">현대L&C</a>
+                            </li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#">Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pri">
+                        <div class="privacy"></div>
+                        <ul>
+                            <li>
+                                <a href="#">매장찾기</a>
+                            </li>
+                            <li>
+                              <a href="#">개인정보처리방침</a>
+                          </li>
+                            <li>
+                                <a href="#">온라인상담</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copy">
+                    Copyright© 2021 Hyundai L&C. All rights reserved.
+                </p>
+            </footer> 
+        </div>
+        <script>
+            $(document).ready(function() {
+                $(".all__menu").click(function() {
+                    $(".allMenu_wrap").fadeIn(); 
+                });
+    
+                $(".all__close").click(function() {
+                    $(".allMenu_wrap").fadeOut(); 
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('li').hover(function() {
+                    $(this).toggleClass('active'); 
+                    $(this).find('.all2').toggleClass('active'); 
+                });
+            });
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                },
+                });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('.tabNav li.home').click(function() {
+                    $('.tabNav li').removeClass('active');
+                    $(this).addClass('active');
+                    $('.tabContent .swiper-container').show();
+                    $('.tabContent .tab-2 .swiper-container').hide();
+                });
+
+                $('.tabNav li.work').click(function() {
+                    $('.tabNav li').removeClass('active');
+                    $(this).addClass('active');
+                    $('.tabContent .swiper-container').hide();
+                    $('.tabContent .tab-2 .swiper-container').show();
+                });
+            });
+        </script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 39,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 0, 
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+            speed: 3000, 
+            freeMode: true,
+            freeModeMomentum: true,
+        });
+        </script>
+        <script>
+            $(document).ready(function() {
+                var swiper = new Swiper('.sec2_slide .swiper-container', {
+                    slidesPerView: 2,
+                    spaceBetween: 63,
+                    centeredSlides: false,
+                    grabCursor: true,
+                    loop: true,
+                });
+            });
+        </script>
+        <script>
+            // window.addEventListener('scroll', function() {
+            //     var header = document.querySelector('header');
+            //     if (window.scrollY < 50) {
+            //         header.classList.add('scroll-header'); // 스크롤 50px 미만일 때 클래스 추가
+            //         header.classList.remove('initial-header'); // 초기 클래스 제거
+            //     } else {
+            //         header.classList.remove('scroll-header'); 
+            //         header.classList.add('initial-header');
+            //     }
+            // });
+        </script>
+        
+    </body>
+</html>

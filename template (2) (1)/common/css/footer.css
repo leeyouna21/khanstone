@@ -1,0 +1,320 @@
+footer {
+	position: relative;
+    width: 100%;
+    height: 549px;
+    padding: 94px 40px 140px;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 9999;
+    font-size: 14px;
+    color: #161616;
+}
+footer .arrow2 {
+	position: absolute;
+    right: 40px;
+    top: -50px;
+}
+footer .footer_container {
+	position: relative;
+	width: 100%;
+	max-width: calc(100% - 80px);
+	margin: 0 auto;
+	height: 80%;
+}
+footer .footer_container .circle {
+	width: 161px;
+	height: 159px;
+	position: absolute;
+	background-image: url(../images/circle.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 10%;
+	right: 27px;
+	animation: circle 15s linear infinite;
+}
+footer .footer_container .k {
+	width: 24px;
+	height: 25px;
+	position: absolute;
+	background-image: url(../images/K.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 25%;
+    right: 5%;
+}
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+footer .footer_container .foot__text {
+	font-size: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+	font-family: NotoSansKR;
+	padding-top: 108px;
+}
+footer .footer_container .foot__logo {
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+}
+footer .footer_container .footer__desc {
+	position: absolute;
+	top: 118px;
+	left: 50%;
+	width: 30%;
+	display: flex;
+	width: 100%;
+}
+footer .footer_container .footer__desc .f__title {
+	font-size: 17px;
+	line-height: 1.5;
+	color: #000;
+	font-family: NotoSansKR;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	padding-right: 163px;
+}
+footer .footer_container .footer__desc .f__inner {
+	font-size: 17px;
+	line-height: 1.5;
+	color: #000;
+	font-family: NotoSansKR;
+	font-weight: bold;
+	position: relative;
+	display: block;
+}
+footer .footer_container .footer__desc li {
+	position: relative;
+	/* padding-left: 226px; */
+	font-size: 17px;
+	font-family: NotoSansKR;
+	font-weight: 500;
+	line-height: 1.5;
+}
+footer .footer_container .footer__desc li em {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+footer .footer_container .sns {
+    color: #7b7b7b;
+    font-size: 20px;
+	position: absolute;
+	top: 393px;
+	left: 50%;
+	width: 30%;
+}
+footer .footer_container .sns ul li {
+	padding: 0 15px;
+	float: left;
+	position: relative;
+}
+footer .footer_container .sns ul li:last-child::after {
+    content: none; 
+	padding-right: 0;
+}
+footer .footer_container .sns ul li::after {
+	content: '';
+    display: block;
+    width: 2.5px;
+    height: 2.5px;
+    border-radius: 50%;
+    background-color: #7b7b7b;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+footer .footer_container .pri {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+	font-size: 17px;
+	font-weight: bold;
+}
+footer .footer_container .pri .privacy {
+	text-align: right;
+	margin-bottom: 15px;
+	padding-right: 20px;
+
+}
+footer .footer_container .pri ul {
+	margin-top: 15px;
+}
+footer .footer_container .pri li {
+	float: left;
+	display:inline;
+	border-left: none;
+	border-right: 2px solid #000;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+footer .footer_container .pri li:last-child {
+	border-right: none;
+}
+footer .copy {
+	width: 100%;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 60px;
+    font-size: 15px;
+    font-weight: 300;
+}
+@media (max-width:1280px) {
+	footer {
+		width: 100%;
+		height: 380px;
+	}
+	footer .arrow2 {
+		position: absolute;
+		top: -1px;
+		z-index: 99999;
+		background-image: url(../images/miniarrow.png);
+		width: 20px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	footer .arrow2 img {
+		display: none;
+	}
+	footer .footer_container {
+		max-width: calc(100% - 40px);
+		margin: 0 auto;
+	}
+	footer .footer_container .circle {
+		position: sticky;
+		position: absolute;
+		top: 50%;
+		right: 0px;
+		width: 61px;
+		height: 60px;
+	}
+	footer .footer_container .k {
+		width: 9px;
+		height: 9px;
+		position: sticky;
+		position: absolute;
+		top: 58%;
+		right: 25px;
+	}
+	footer .footer_container .foot__text {
+		font-size: 23px;
+		padding-top: 0;
+		font-weight: 700;
+	}
+	footer .footer_container .foot__logo {
+		display: none;
+	}
+	footer .footer_container .footer__desc .f__title{
+		display: none;
+	}
+	footer .footer_container .footer__desc .f__inner {
+		font-size: 14px;
+		display: block;
+		font-weight: 400;
+		width: 100%;
+		position: absolute;
+		left: -160px;
+		bottom: -50px;
+	}
+	footer .footer_container .sns {
+		font-size: 14px;
+		position: sticky;
+		color: #7b7b7b;
+		font-size: 14px;
+		width: 100%;
+		border-top: 1px solid #DADADA;
+		position: sticky;
+		position: absolute;
+		top: 75%;
+		left: 0;
+		padding: 20px 0px;
+		font-weight: 800;
+	}
+	footer .footer_container .sns ul li {
+		padding: 0px 5px;
+	}
+	footer .footer_container .pri {
+		position: sticky;
+		font-size: 14px;
+		position: absolute;
+		width: 100%;
+	}
+	footer .footer_container .pri li  {
+		padding-left: 25px;
+		padding-right: 9px;
+		margin-left: -20px;
+		border-right: 2px solid #000;
+		text-align: left;
+		height: 15px;
+	}
+	footer .copy {
+		width: 100%;
+		font-size: 12px;
+	}
+	/* footer {
+		width: 100%;
+		background-color: #f9c7c7;
+		height: auto;
+	}
+	footer .arrow2  {
+		width: 20px;
+		height: 40px;
+		top: 0;
+		z-index: 9999;
+	}
+	footer .footer_container {
+		max-width: calc(100% - 40px);
+		margin: 0 auto;
+		height: 500px;
+		background-color: #fe8f8f;
+	}
+	footer .footer_container .foot__text {
+		font-size: 23px;
+		padding-top: 0;
+		font-family: NotoSansKR;
+		font-weight: 700;
+	}
+	footer .footer_container .footer__desc .f__title  {
+		display: none;
+	}
+	footer .footer_container .footer__desc {
+		left: 0;
+		top: 80px;
+
+	}
+	footer .footer_container .footer__desc .f__inner {
+		font-size: 14px;
+	}
+	footer .footer_container .foot__logo {
+		display: none;
+	}
+	footer .footer_container .circle {
+		width: 61px;
+		height: 31px;
+		animation: circle 15s linear infinite;
+	}
+	footer .footer_container .pri {
+		position: sticky;
+		font-size: 14px;
+	}
+	footer .footer_container .sns {
+		position: sticky;
+		font-size: 14px;
+		
+	} */
+}
