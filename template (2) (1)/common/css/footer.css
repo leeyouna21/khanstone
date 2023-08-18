@@ -42,7 +42,7 @@ footer .footer_container .k {
 	background-size: cover;
 	position: absolute;
 	top: 25%;
-    right: 5%;
+    right: 95px;
 }
 @keyframes circle {
     from {
