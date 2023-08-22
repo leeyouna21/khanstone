@@ -17,6 +17,23 @@ br.pc {
 	font-family: NotoSansKR;
 	padding-top: 85px;
 }
+#section .none {
+	font-size: 12px;
+}
+#section .none span {
+	color:#939393 ;
+	position: relative;
+	padding: 0 15px 15px 0px;
+}
+#section .none span::before {
+	content: "";
+	width: 10px;
+	height: 1px;
+	background-color: #939393;
+	position: absolute;
+	top: 8px;
+	left: 50px;
+}
 #section h1 {
 	font-size: 110px;
 	font-family: NotoSansKR;
@@ -27,7 +44,7 @@ br.pc {
 	padding-top: 24px;
 	font-size: 18px;
 	font-family: NotoSansKR;
-	font-weight: normal;
+	font-weight: 400;
 	text-align: center;
 }
 #section .container {
@@ -36,7 +53,6 @@ br.pc {
 	margin: 0 auto;
 	background-color: #fcfcfc;
 	margin-top: 60px;
-	
 }
 #section .container .buy__wrap {
 	width: calc(100% - 212px);
@@ -53,11 +69,13 @@ br.pc {
 	width: 100%;
 	height: 60px;
 	margin-right: 42px;
+	background: #ffff;
 }
 #section .container .buy__wrap .one .select select {
 	width: 100%;
 	height: 60px;
-	padding: .8em .5em;
+	padding: 20px;
+	/* padding: .8em .5em; */
 	background: url('../images/arrow3.png') no-repeat 95% 50%;
 	font-size: 16px;
 	-webkit-appearance: none;
@@ -67,22 +85,27 @@ br.pc {
 #section .container .buy__wrap .one .work {
 	width: 100%;
 	height: 60px;
+	background: #ffff;
 }
 #section .container .buy__wrap .one .work #youWork {
 	width: 100%;
+	
 }
 input {
-	border: 1.33px solid #d1d1d1;
+	border: 1px solid #d1d1d1;
+	
 }
 #section .container .buy__wrap .one input {
-	border: 1.33px solid #d1d1d1;
+	border: 1px solid #d1d1d1;
 	width: 100%;
 	height: 60px;
+	
 }
 #section .container .buy__wrap .one select {
-	border: 1.33px solid #d1d1d1;
+	border: 1px solid #d1d1d1;
 	width: 100%;
 	height: 60px;
+	
 }
 .inputStyle {
 	font-size: 16px;
@@ -96,16 +119,20 @@ input {
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 35px;
+
 }
 .container .buy__wrap .two .number {
 	width: 50%;
 	height: 60px;
 	display: flex;
+	
 }
 .container .buy__wrap .two .number input {
 	width: 100%;
 	height: 60px;
 	margin-right: 15px;
+	background: #ffff;
+
 }
 .container .buy__wrap .two .number a {
 	display: block;
@@ -126,11 +153,14 @@ input {
 .container .buy__wrap .two .address input {
 	width: 100%;
 	height: 60px;
+	background: #ffff;
+
 }
 .container .buy__wrap .three {
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 35px;
+
 }
 .container .buy__wrap .three .name {
 	width: 100%;
@@ -142,31 +172,41 @@ input {
 	height: 60px;
 }
 #section .container .buy__wrap .three input {
-	border: 1.33px solid #d1d1d1;
+	border: 1px solid #d1d1d1;
 	width: 100%;
 	height: 60px;
+	background: #ffff;
+
 }
 .container .buy__wrap .four .question {
 	height: 266px;
 	padding-bottom: 35px;
 }
-#section .container .buy__wrap .four input {
-	border: 1.33px solid #d1d1d1;
-	width: 100%;
+#section .container .buy__wrap .four textarea {
+	border: 1px solid #d1d1d1;
+	width: 97%;
 	height: 266px;
+	background: #ffff;
+	font-size: 16px;
+	color: #939393;
+	padding: 20px 20px;
 }
 #section .container .buy__wrap .five .term__content {
 	font-size: 16px;
-	border: 1.33px solid #d1d1d1;
+	border: 1px solid #d1d1d1;
 	margin-bottom: 20px;
 	padding: 37px 30px;
 	color: #636363;
 	overflow-y: scroll;
 	height: 266px;
+	background: #ffff;
+	margin-top: 35px;
+
 }
 #section .container .buy__wrap .five .term__content label {
 	display: block;
 	margin-bottom: 5px;
+	
 }
 #section .container .buy__wrap .five .term__content span {
 	font-size: 16px;
@@ -176,22 +216,27 @@ input {
 	height: 178px;
 	margin-top: 45px;
 	border: 1px solid #D1D1D1;
+	background: #ffff;
+
 }
 .container .buy__wrap .six .auto p {
 	text-align: center;
 	padding-top: 78px;
+	font-weight: 500;
 }
 .term__content::-webkit-scrollbar {
-    width: 8px;  
+    width: 8px;
+	background: #F7F7F7;
 }
 .term__content::-webkit-scrollbar-thumb {
     height: 30%; 
     background: #E1E1E1; 
 }
 #section .container .buy__wrap .six input {
-	border: 1.33px solid #d1d1d134;
+	border: 1px solid #d1d1d134;
 	width: 100%;
 	height: 266px;
+	
 }
 .btnStyle {
 	display: block;
@@ -206,10 +251,9 @@ input {
 .buy {
 	width: 100%;
 	height: 149px;
-	margin-top: 120px;
+	/* margin-top: 120px; */
 	margin-bottom: 240px;
 	font-family: NotoSansKR;
-
 }
 .buy ul {
 	border: 1px solid #d8d8d8;
@@ -221,10 +265,19 @@ input {
 .buy ul li {
 	width: 100%;
 	padding-left: 131px;
-	border-right: 1px solid #d8d8d8;
+	position: relative;
 }
-.buy ul li:last-child {
-	border-right: none;
+.buy ul li::before {
+	content: "";
+	width: 1px;
+	height: 93px;
+	background-color: #d8d8d8;
+	position: absolute;
+	right: 0px;
+	top: -10px;
+}
+.buy ul li:last-child::before {
+	display: none;
 }
 .buy ul li a {
 	display: block;
@@ -247,12 +300,18 @@ input {
 	font-size: 18px;
 	font-weight: 700;
 	margin-bottom: 17.5px;
+	width: 100px;
+}
+.buy .container1 ul li a {
+	font-size: 16px;
+	width: 350px;
 }
 #section .container1 {
-	width: calc(100% - 326px);
+	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	margin-top: 60px;
+	padding-top: 116px;
+	background: #fff;
 }
 #section .none {
 	display: none;
@@ -262,31 +321,33 @@ input {
 		/* padding-top: 36px; */
 		display: block;
 		text-align: center;
+
 	}
 	br.pc {
 		display: none;
 	}
 	#section {
 		width: 100%;
-		height: auto;
+		height: 2200px;
 		padding-top: 36px;
 	}
 	#section h1 {
 		font-size: 45px;
 	}
 	#section p {
-		padding-top: 10px;
+		/* padding-top: 20px; */
 		font-size: 16px;
-		margin-left: 20px;
-		margin-right: 20px;
-		
+		margin-left: 8px;
 	}
 	#section .container {
 		width: calc(100% - 40px);
 		margin: 0 auto;
 		height: 1500px;
 		background-color: #F9F9F9;
-		margin-top: 40px;
+	}
+	.buy ul li a::before  {
+		position: absolute;
+		top: 10px;
 	}
 	#section .container .buy__wrap {
 		width: 100%;
@@ -300,6 +361,8 @@ input {
 		width: 100%;
 		margin-right: 0;
 		margin-bottom: 10px;
+	}
+	#section .container .buy__wrap .one .select option {
 	}
 	.container .buy__wrap .two {
 		display: block;
@@ -320,18 +383,28 @@ input {
 	.container .buy__wrap .three .name {
 		margin-bottom: 10px;
 	}
+	.container .buy__wrap .four {
+		width: 90%;
+		padding-bottom: 10px;
+	}
 	.container .buy__wrap .four .question{
 		padding-bottom: 10px;
+		width: 100%;
 	}
 	#section .container .buy__wrap .five .term__content {
 		padding: 20px 20px;
 		font-size: 14px;
+
 	}
 	#section .container1 {
-		width: calc(100% - 40px);
+		width: 100%;
 		height: auto;
 		margin: 0 auto;
 		/* margin-top: 60px; */
+		padding: 0;
+	}
+	.buy ul li::before {
+		display: none;
 	}
 	.buy {
 		width: 100%;
@@ -353,16 +426,16 @@ input {
 	.buy ul li a  {
 		padding-left: 0;
 	}
-	.buy ul li a::before  {
-		position: absolute;
-		top: 20px;
-	}
+
 	.buy ul li a p {
 		font-size: 16px;
 		margin-bottom: 20px;
 	}
 	.buy ul li a span {
 		font-size: 14px;
-		
+		margin-left: 10px;
+	}
+	.btnStyle {
+		margin-top: 40px;
 	}
 }

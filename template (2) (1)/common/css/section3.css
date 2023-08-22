@@ -39,6 +39,98 @@
 	padding-left: 260px;
 	font-weight: bold;
 }
+
+/* 여기부터 */
+#section3 .container .info{
+	position: relative;
+}
+#section3 .container .info li:nth-child(1)::before{
+	content: "";
+	width: 50px; height: 50px;
+	position: absolute; left: 50%; top: 120px; transform: translateX(-50%);
+	background: url(../images/info1.png)no-repeat center/cover;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+#section3 .container .info li:nth-child(2)::before{
+	content: "";
+	width: 50px; height: 50px;
+	position: absolute; left: 50%; top: 120px; transform: translateX(-50%);
+	background: url(../images/info2.png)no-repeat center/cover;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+#section3 .container .info li:nth-child(3)::before{
+	content: "";
+	width: 50px; height: 50px;
+	position: absolute; left: 50%; top: 120px; transform: translateX(-50%);
+	background: url(../images/info3.png)no-repeat center/cover;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+#section3 .container .info li:nth-child(1)::after {
+	content: "매장 안내";
+	font-size: 22px;
+	font-weight: bold;
+	font-family: NotoSansKR;
+	transition: 0.3s;
+	position: absolute; left: 50%; top: 181px;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+#section3 .container .info a:nth-child(1):hover {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+#section3 .container .info li:nth-child(1):hover::before {
+	opacity: 1;
+}
+#section3 .container .info li:nth-child(1):hover::after {
+	opacity: 1;
+}
+#section3 .container .info li:nth-child(2)::after {
+	content: "상업용 구매";
+	font-size: 22px;
+	font-weight: bold;
+	font-family: NotoSansKR;
+	transition: 0.3s;
+	position: absolute; left: 50%; top: 181px;
+	transform: translateX(-50%);
+	opacity: 0;
+
+}
+#section3 .container .info a:nth-child(2):hover {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+#section3 .container .info li:nth-child(2):hover::before {
+	opacity: 1;
+}
+#section3 .container .info li:nth-child(2):hover::after {
+	opacity: 1;
+}
+#section3 .container .info li:nth-child(3)::after {
+	content: "직접 구매";
+	font-size: 22px;
+	font-weight: bold;
+	font-family: NotoSansKR;
+	transition: 0.3s;
+	position: absolute; left: 50%; top: 181px;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+#section3 .container .info a:nth-child(3):hover {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+#section3 .container .info li:nth-child(3):hover::before {
+	opacity: 1;
+	
+}
+#section3 .container .info li:nth-child(3):hover::after {
+	opacity: 1;
+}
 #section3 .container .contact .store {
 	width: 214px;
     height: 90px;
@@ -94,6 +186,7 @@
 	font-size: 22px;
 	font-weight: bold;
 	font-family: NotoSansKR;
+	transition: 0.3s;
 
 }
 #section3 .container .info li::before {

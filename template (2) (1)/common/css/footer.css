@@ -1,13 +1,13 @@
 footer {
 	position: relative;
     width: 100%;
-    height: 549px;
-    padding: 94px 40px 140px;
+    height: auto;
     background-color: #fff;
     box-sizing: border-box;
     z-index: 9999;
     font-size: 14px;
     color: #161616;
+	font-family: NotoSansKR;
 }
 footer .arrow2 {
 	position: absolute;
@@ -15,34 +15,37 @@ footer .arrow2 {
     top: -50px;
 }
 footer .footer_container {
-	position: relative;
-	width: 100%;
-	max-width: calc(100% - 80px);
+	width: calc(100% - 80px);
+	height: auto;
 	margin: 0 auto;
-	height: 80%;
+	display: flex;
+	padding-top: 108px;
 }
+
+/* dOSpspspspspsp */
 footer .footer_container .circle {
-	width: 161px;
-	height: 159px;
-	position: absolute;
-	background-image: url(../images/circle.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
-	top: 10%;
-	right: 27px;
-	animation: circle 15s linear infinite;
+    width: 161px;
+    height: 159px;
+    position: relative;
+    background-image: url(../images/circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 108px;
+    right: 27px;
+    animation: circle 15s linear infinite;
 }
+
 footer .footer_container .k {
-	width: 24px;
-	height: 25px;
-	position: absolute;
-	background-image: url(../images/K.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
-	top: 25%;
-    right: 95px;
+    width: 24px;
+    height: 25px;
+    position: absolute;
+    background-image: url(../images/K.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+	top: 181px;
+    right: 4.2%; 
+    transform: translate(-50%, -50%);
 }
 @keyframes circle {
     from {
@@ -54,74 +57,55 @@ footer .footer_container .k {
 }
 footer .footer_container .foot__text {
 	font-size: 40px;
-    font-weight: 500;
-    line-height: 1.5;
 	font-family: NotoSansKR;
-	padding-top: 108px;
+	font-weight: 500;
 }
-footer .footer_container .foot__logo {
-	position: absolute;
-	left: 0px;
-	bottom: 0;
+footer .foot__logo {
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
-footer .footer_container .footer__desc {
-	position: absolute;
-	top: 118px;
-	left: 50%;
-	width: 30%;
+footer .footer__desc {
 	display: flex;
-	width: 100%;
-}
-footer .footer_container .footer__desc .f__title {
 	font-size: 17px;
 	line-height: 1.5;
 	color: #000;
 	font-family: NotoSansKR;
 	font-weight: bold;
+	margin-left: 586px;
+}
+footer .footer__desc .f__title{
 	position: relative;
 	display: block;
 	padding-right: 163px;
+	line-height: 1.8;
 }
-footer .footer_container .footer__desc .f__inner {
-	font-size: 17px;
-	line-height: 1.5;
-	color: #000;
-	font-family: NotoSansKR;
-	font-weight: bold;
+footer .footer__desc .f__inner{
 	position: relative;
 	display: block;
 }
-footer .footer_container .footer__desc li {
-	position: relative;
-	/* padding-left: 226px; */
-	font-size: 17px;
-	font-family: NotoSansKR;
-	font-weight: 500;
-	line-height: 1.5;
+/* 여기까지 */
+
+footer .fo__cont2 {
+	width: calc(100% - 80px);
+	margin: 0 auto;
+	display: flex;
 }
-footer .footer_container .footer__desc li em {
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-footer .footer_container .sns {
+footer .fo__cont2 .sns {
     color: #7b7b7b;
     font-size: 20px;
-	position: absolute;
-	top: 393px;
-	left: 50%;
-	width: 30%;
+	font-family: NotoSansKR;
+	padding-left: 47%;
+	padding-top: 140px;
 }
-footer .footer_container .sns ul li {
+footer .fo__cont2 .sns ul li {
 	padding: 0 15px;
 	float: left;
 	position: relative;
 }
-footer .footer_container .sns ul li:last-child::after {
+footer .fo__cont2 .sns ul li:last-child::after {
     content: none; 
-	padding-right: 0;
 }
-footer .footer_container .sns ul li::after {
+footer .fo__cont2 .sns ul li::after {
 	content: '';
     display: block;
     width: 2.5px;
@@ -133,73 +117,74 @@ footer .footer_container .sns ul li::after {
     top: 50%;
     transform: translate(50%, -50%);
 }
-footer .footer_container .pri {
+footer .fo__cont2 .pri {
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	right: 20px;
+	bottom: 30%;
 	text-align: right;
 	font-size: 17px;
 	font-weight: bold;
+	
 }
-footer .footer_container .pri .privacy {
-	text-align: right;
-	margin-bottom: 15px;
-	padding-right: 20px;
+footer .fo__cont2 .pri .privacy .pinfo {
+	font-size: 17px;
+	font-family: NotoSansKR;
+	padding-bottom: 15px; 
+    margin-left: 60px;
+}
+footer .fo__cont2 .pri .privacy {
+	text-align: center;
 
 }
-footer .footer_container .pri ul {
+footer .fo__cont2 .pri ul {
 	margin-top: 15px;
 }
-footer .footer_container .pri li {
+footer .fo__cont2 .pri li {
 	float: left;
 	display:inline;
 	border-left: none;
 	border-right: 2px solid #000;
 	padding-left: 20px;
 	padding-right: 20px;
+	font-family: NotoSansKR;
 }
-footer .footer_container .pri li:last-child {
+footer .fo__cont2 .pri li:last-child {
 	border-right: none;
 }
-footer .copy {
+footer .copyri {
 	width: 100%;
     background-color: #000;
     color: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+	height: 61px;
     text-align: center;
     line-height: 60px;
     font-size: 15px;
     font-weight: 300;
+	font-family: NotoSansKR;
+	
 }
+
 @media (max-width:1280px) {
 	footer {
 		width: 100%;
-		height: 380px;
-	}
-	footer .arrow2 {
-		position: absolute;
-		top: -1px;
-		z-index: 99999;
-		background-image: url(../images/miniarrow.png);
-		width: 20px;
-		height: 40px;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	footer .arrow2 img {
-		display: none;
+		
 	}
 	footer .footer_container {
-		max-width: calc(100% - 40px);
-		margin: 0 auto;
+		width: calc(100% - 40px);
+		padding-top: 0;
+		display: block;
+	}
+	footer .footer_container .foot__text {
+		font-size: 23px;
+		padding-top: 30px;
+		font-family: NotoSansKR;
+		
 	}
 	footer .footer_container .circle {
 		position: sticky;
 		position: absolute;
-		top: 50%;
-		right: 0px;
+		top: 45%;
+		right: 20px;
 		width: 61px;
 		height: 60px;
 	}
@@ -208,62 +193,93 @@ footer .copy {
 		height: 9px;
 		position: sticky;
 		position: absolute;
-		top: 58%;
-		right: 25px;
+		top: 53%;
+		right: 41px;
 	}
-	footer .footer_container .foot__text {
-		font-size: 23px;
-		padding-top: 0;
-		font-weight: 700;
+	footer .footer_container .footer__desc {
+		margin-left: 0;
+		font-family: NotoSansKR;
+
 	}
-	footer .footer_container .foot__logo {
+	footer .footer_container .footer__desc .f__inner {
+		display: block;
+		font-size: 14px;
+		padding-top: 20px;
+		font-weight: 400;
+	}
+	footer .footer_container .footer__desc .footer__inner1 {
 		display: none;
 	}
 	footer .footer_container .footer__desc .f__title{
 		display: none;
 	}
-	footer .footer_container .footer__desc .f__inner {
+	footer .fo__cont2 {
+		width: calc(100% - 40px);
+		height: 110px;
+	}
+	footer .fo__cont2 .foot__logo {
+		display: none;
+	}
+	footer .fo__cont2 .sns {
 		font-size: 14px;
-		display: block;
-		font-weight: 400;
+		padding: 20px 0px 10px 0px;
+		margin-left: -15px;
 		width: 100%;
-		position: absolute;
-		left: -160px;
-		bottom: -50px;
+		font-family: NotoSansKR;
 	}
-	footer .footer_container .sns {
-		font-size: 14px;
-		position: sticky;
-		color: #7b7b7b;
-		font-size: 14px;
-		width: 100%;
-		border-top: 1px solid #DADADA;
-		position: sticky;
-		position: absolute;
-		top: 75%;
-		left: 0;
-		padding: 20px 0px;
-		font-weight: 800;
-	}
-	footer .footer_container .sns ul li {
-		padding: 0px 5px;
-	}
-	footer .footer_container .pri {
-		position: sticky;
-		font-size: 14px;
-		position: absolute;
+	footer .fo__cont2 .pri {
+		right: 45px;
+		bottom: 50px;
+		margin-bottom: 27px;
 		width: 100%;
 	}
-	footer .footer_container .pri li  {
-		padding-left: 25px;
-		padding-right: 9px;
-		margin-left: -20px;
-		border-right: 2px solid #000;
-		text-align: left;
+	footer .fo__cont2 .pri .privacy {
+		display: flex;
+		font-size: 14px;
+	}
+	footer .fo__cont2 .pri .privacy .pinfo{
+		font-size: 14px;
+		padding: 1px 5px 0px 5px;
+		position: relative;
+		
+	}
+	footer .fo__cont2 .pri .privacy .pinfo::before {
+		content: "";
+		width: 1px;
+		height: 10px;
+		background-color: black;
+		position: absolute;
+		right: 0;
+		top: 5px;
+	}
+	footer .fo__cont2 .pri li {
 		height: 15px;
+		border-right: 1px solid #000;
+		padding: 1px 5px 0px 5px;
+		font-family: NotoSansKR;
+		border-right: none;
+		position: relative;
 	}
-	footer .copy {
+	footer .fo__cont2 .pri li::before {
+		content: "";
+		width: 1px;
+		height: 10px;
+		background-color: black;
+		position: absolute;
+		right: 0;
+		top: 5px;
+	}
+	footer .fo__cont2 .pri .pri2 li:last-child::before {
+		display: none;
+	}
+	footer .copyri {
 		width: 100%;
 		font-size: 12px;
+		height: 40px;
 	}
+	footer .copyri .copy {
+		font-size: 12px;
+		line-height: 3;
+	} 
+	
 }

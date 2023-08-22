@@ -42,6 +42,10 @@
           #buy__header .headerTop2 .allMenu::before {
             content: "Menu";
             font-size: 20px;
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
           }
           #buy__header .headerTop2 .allMenu ul {
             opacity: 0;
@@ -94,7 +98,7 @@
             transition-duration: 0.5s;
           }
           #buy__header .headerTop2 #gnb2 .gnbWrap2 > li:hover .gnb_inner {
-            height: 85px; /*서브메뉴 li한개의 높이 50*4*/
+            height: 85px; 
             transition-duration: 1s;
           }
           #buy__header .headerTop2 #gnb2 .gnbWrap2 .gnb_inner{
@@ -114,9 +118,9 @@
             margin-bottom: 5px;
             margin-top: 16px;
           }
-          #buy__header .headerTop2 .logo {
-
-            }
+          #buy__header .headerTop2 #gnb2 .gnbWrap2 .gnb_inner li:hover {
+            color: #B6338D;
+          }
           @media(max-width:1280px) {
             #buy__header {
               width: 100%;
@@ -138,7 +142,7 @@
             }
             #buy__header .headerTop2 #gnb2 {
               display: none;
-            }
+            } 
           } 
         </style>
     </head>
@@ -160,7 +164,7 @@
                     <a href="#">브랜드 소개</a>
                   </li>
                   <li>
-                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                    <a href="#">현대L&C</span></a>
                   </li>
                 </ul>
               </li>
@@ -172,7 +176,7 @@
                     <a href="#">브랜드 소개</a>
                   </li>
                   <li>
-                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                    <a href="#">현대L&C</span></a>
                   </li>
                 </ul>
               </li>
@@ -183,7 +187,7 @@
                     <a href="#">브랜드 소개</a>
                   </li>
                   <li>
-                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                    <a href="#">현대L&C</span></a>
                   </li>
                 </ul>
               </li>
@@ -194,7 +198,7 @@
                     <a href="#">브랜드 소개</a>
                   </li>
                   <li>
-                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                    <a href="#">현대L&C</span></a>
                   </li>
                 </ul>
               </li>
@@ -205,7 +209,7 @@
                     <a href="#">브랜드 소개</a>
                   </li>
                   <li>
-                    <a href="#"><span style="color: #B6338D;">현대L&C</span></a>
+                    <a href="#">현대L&C</span></a>
                   </li>
                 </ul>
               </li>
@@ -213,85 +217,141 @@
           </div>
           </h1>
         </div>
+        <div class="allMenu_wrap">
+          <div class="all_image"></div>
+          <div class="all__close"></div>
+          <div class="all__title">
+              <div class="all__inner">
+                  <ul>
+                      <li data-image="./images/all1.png">
+                          <div class="all1">
+                              <span class="a_en">Khanstone</span>
+                              <span class="a_ko">칸스톤</span>
+                          </div>
+                          <ul class="all2">
+                              <li>
+                                  <a href="#">브랜드 소개</a>
+                                  <a href="#">현대L&C</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li data-image="./images/all2.png">
+                          <div class="all1">
+                              <span class="a_en">Collection</span>
+                              <span class="a_ko">컬렉션</span>
+                          </div>
+                          <ul class="all2">
+                              <li>
+                                  <a href="#">브랜드 소개</a>
+                                  <a href="#">현대L&C</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li data-image="./images/all3.png">
+                          <div class="all1">
+                              <span class="a_en">Gallery</span>
+                              <span class="a_ko">갤러리</span>
+                          </div>
+                          <ul class="all2">
+                              <li>
+                                  <a href="#">브랜드 소개</a>
+                                  <a href="#">현대L&C</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li data-image="./images/all4.png">
+                          <div class="all1">
+                              <span class="a_en">Purchase</span>
+                              <span class="a_ko">구매방법</span>
+                          </div>
+                          <ul class="all2">
+                              <li>
+                                  <a href="#">브랜드 소개</a>
+                                  <a href="#">현대L&C</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li data-image="./images/all5.png">
+                          <div class="all1">
+                              <span class="a_en">Service</span>
+                              <span class="a_ko">고객지원</span>
+                          </div>
+                          <ul class="all2">
+                              <li>
+                                  <a href="#">브랜드 소개</a>
+                                  <a href="#">현대L&C</a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="circle"></div>
+          <div class="k"></div>
+          <div class="all__desc">
+              <div class="all__text">
+                  공간의 가치를<br>
+              높이는 선택, 칸스톤
+              </div>
+              <div class="all__sns">
+                  <ul>
+                      <li>
+                          <a href="#">현대L&C</a>
+                      </li>
+                      <li>
+                          <a href="#">Instagram</a>
+                      </li>
+                      <li>
+                          <a href="#">Youtube</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="allmo"></div>
+        </div>
       </header>
       <section id="section">
-		    <p class="none"><span style="color:#939393 ;">구매방법 ㅡ</span>  B2B 구매</p>
+		    <p class="none"><span>구매방법</span> B2B 구매</p>
         <h1>B2B 구매</h1>
         <p class="b2b">
           B2B 구매를 희망하시는 업계 관계자들은 아래 상담 양식을 기입하여<br class="pc" />
           제출하시면, 빠른 상담을 도와드리겠습니다.
         </p>
         <div class="container">
-          <fieldset>
+          <form>
             <div class="buy__wrap">
               <div class="one">
                 <div class="select">
-					<select>
-						<option>주거용 신축</option>
-						<option>회사용 신축</option>
-						<option>주회용 신축</option>
-					  </select>
+                  <select>
+                    <option>주거용 신축</option>
+                    <option>회사용 신축</option>
+                    <option>주회용 신축</option>
+                  </select>
                 </div>
                 <div class="work">
-                  <input
-                    type="text"
-                    id="youWork"
-                    class="inputStyle"
-                    placeholder="회사명"
-                    required
-                  />
+                  <input type="text" id="youWork" class="inputStyle" placeholder="회사명" required />
                 </div>
               </div>
               <div class="two">
                 <div class="number">
-                  <input
-                    type="text"
-                    id="youNumber"
-                    class="inputStyle"
-                    placeholder="우편번호"
-                    required
-                  />
+                  <input  type="text"  id="youNumber"  class="inputStyle"  placeholder="우편번호" required/>
                   <a href="#">우편번호 찾기</a>
                 </div>
                 <div class="address">
-                  <input
-                    type="text"
-                    id="youWork"
-                    class="inputStyle"
-                    placeholder="주소"
-                    required
-                  />
+                  <input  type="text"  id="youAd"  class="inputStyle"  placeholder="주소"  required/>
                 </div>
               </div>
               <div class="three">
                 <div class="name">
-                  <input
-                    type="text"
-                    id="youWork"
-                    class="inputStyle"
-                    placeholder="이름"
-                    required
-                  />
+                  <input type="text"  id="youName"  class="inputStyle"   placeholder="이름"  required  />
                 </div>
                 <div class="phone">
-                  <input
-                    type="text"
-                    id="youWork"
-                    class="inputStyle"
-                    placeholder="연락처"
-                    required
-                  />
+                  <input  type="text"  id="youPhone"  class="inputStyle"  placeholder="연락처"  required/>
                 </div>
               </div>
               <div class="four">
                 <div class="question">
-                  <input
-                    type="text"
-                    id="youWork"
-                    class="inputStyle"
-                    placeholder="문의내용"
-                    required
-                  />
+                  <textarea name="" id="youQues" cols="30" rows="10">문의내용</textarea>
                 </div>
               </div>
               <div class="five">
@@ -348,26 +408,26 @@
               </div>
             </div>
             <button type="submit" class="btnStyle">문의하기</button>
-          </fieldset>
+          </form>
         </div>
-		<div class="buy">
-			<div class="container1">
-				<ul>
-					<li>
-						<a href="#">
-							<p>B2B 구매</p>
-							<span>상업용 전문가와 상담을 진행하시길 원하십니까?</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<p>맞춤형 구매</p>
-							<span>칸스톤 코디네이터와  상담하여 직접 제품을 구매할 수 있습니다.</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+        <div class="buy">
+          <div class="container1">
+            <ul>
+              <li>
+                <a href="#">
+                  <p>B2B 구매</p>
+                  <span>상업용 전문가와 상담을 진행하시길 원하십니까?</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <p>맞춤형 구매</p>
+                  <span>칸스톤 코디네이터와  상담하여 직접 제품을 구매할 수 있습니다.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
     <footer>  
@@ -381,55 +441,75 @@
               고객의 소중한 공간에<br>
               가치를 더합니다.
           </h1>
+          <div class="footer__desc">
+              <div class="f__title">
+                  <div><a href="#">칸스톤</a></div>
+                  <div><a href="#">컬렉션</a></div>
+                  <div><a href="#">갤러리</a></div>
+                  <div><a href="#">구매방법</a></div>
+                  <div><a href="#">고객지원</a></div>
+              </div>
+              <div class="f__inner">
+                  <div>주소. 05340 서울특별시 강동구 천호대로 1077</div>
+                  <div>이스트센트럴타워빌딩 (주)현대엘앤씨</div>
+                  <div class="footer__inner1">&nbsp;</div>
+                  <div>대표번호. 080-729-8272</div>
+                  <div>팩스. 02-6364-7408</div>
+              </div>
+          </div>
+      </div>
+      <div class="fo__cont2">
           <a href="#" class="foot__logo">
               <img src="./images/logo.png" alt="">
           </a>
-          <div class="footer__desc">
-              <div class="f__title">
-                  <div class="footer__title">칸스톤</div>
-                  <div class="footer__title">컬렉션</div>
-                  <div class="footer__title">갤러리</div>
-                  <div class="footer__title">구매방법</div>
-                  <div class="footer__title">고객지원</div>
+              <div class="sns">
+                  <ul>
+                      <li>
+                          <a href="#">현대L&C</a>
+                      </li>
+                      <li>
+                          <a href="#">Instagram</a>
+                      </li>
+                      <li>
+                          <a href="#">Youtube</a>
+                      </li>
+                  </ul>
               </div>
-              <div class="f__inner">
-                  <div class="footer__inner">주소. 05340 서울특별시 강동구 천호대로 1077</div>
-                  <div class="footer__inner">이스트센트럴타워빌딩 (주)현대엘앤씨</div>
-                  <div class="footer__inner">대표번호. 080-729-8272</div>
-                  <div class="footer__inner">팩스. 02-6364-7408</div>
+              <div class="pri">
+                  <div class="privacy">
+                      <ul>
+                          <li class="pinfo">
+                              <a href="#">개인정보취급방침</a>
+                          </li>
+                      </ul>
+                      <ul class="pri2">
+                          <li>
+                              <a href="#">매장찾기</a>
+                          </li>
+                          <li>
+                              <a href="#">온라인상담</a>
+                          </li>
+                      </ul>
+                      
+                  </div>
               </div>
-          </div>
-          <div class="sns">
-              <ul>
-                  <li>
-                      <a href="#">현대L&C</a>
-                  </li>
-                  <li>
-                      <a href="#">Instagram</a>
-                  </li>
-                  <li>
-                      <a href="#">Youtube</a>
-                  </li>
-              </ul>
-          </div>
-          <div class="pri">
-              <div class="privacy"></div>
-              <ul>
-                  <li>
-                      <a href="#">매장찾기</a>
-                  </li>
-                  <li>
-                    <a href="#">개인정보처리방침</a>
-                </li>
-                  <li>
-                      <a href="#">온라인상담</a>
-                  </li>
-              </ul>
-          </div>
       </div>
-      <p class="copy">
-          Copyright© 2021 Hyundai L&C. All rights reserved.
-      </p>
+      <div class="copyri">
+          <p class="copy">
+              Copyright© 2021 Hyundai L&C. All rights reserved.
+          </p>
+      </div>
   </footer> 
+   <script>
+            $(document).ready(function() {
+                $(".allMenu").click(function() {
+                    $(".allMenu_wrap").fadeIn(); 
+                });
+    
+                $(".all__close").click(function() {
+                    $(".allMenu_wrap").fadeOut(); 
+                });
+            });
+        </script>
   </body>
 </html>

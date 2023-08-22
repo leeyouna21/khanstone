@@ -2,8 +2,13 @@ main {
 	width: 100%;
 	height: auto;
 	background-color: #fff;
-	margin-top: -130px;
-	/* margin-top: -350px; */
+	object-fit: cover;
+	/* position: relative; */
+	position: absolute;
+	top: 0;
+}
+main::before {
+	background: linear-gradient(to top, black, yellow);
 }
 .mySwiper {
 	object-fit: cover;
@@ -80,7 +85,7 @@ main .main__container .main__text2 {
 .mySwiper .swiper-button-next,
 .mySwiper .swiper-button-prev {
     top: initial;
-    bottom: 0.25rem;
+	bottom: 10px;
     color: #000000;
     opacity: 1;
 }
@@ -88,6 +93,7 @@ main .main__container .main__text2 {
     z-index: 15;
     left: 93%;
 	bottom: 204px;
+	margin-left: -10px;
 }
 .mySwiper .swiper-button-next {
 	bottom: 204px;
@@ -148,9 +154,9 @@ br.pc {
 		bottom: 39px;
 	}
 	.mySwiper .swiper-button-prev{
-		left: 20px;
+		left: 40px;
 	}
 	.mySwiper .swiper-button-next {
-		left: 70px;
+		left: 75px;
 	}
 }

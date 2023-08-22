@@ -1,4 +1,62 @@
 #section2 {
+    width: 100%;
+    height: auto;
+}
+#section2 .sec_desc {
+    text-align: right;
+    margin: 0 332px 80px 0;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 500;
+	font-family: NotoSansKR;
+    padding-top: 170px;
+    
+}
+#section2 .sec_desc .follow {
+	color: #AB3284;
+}
+#section2 .sec2_slide {
+    width:748px;
+}
+#section2 .sec2_slide .swiper-slide {
+    position: relative;
+    margin-left: 63px;
+    padding-bottom: 170px;
+}
+#section2 .sec2_slide .swiper-slide .imgWrap {
+    width: 370px;
+    height: 434px;
+    float: left;
+    margin-right: 78px;
+    position: relative;
+}
+#section2 .sec2_slide .swiper-slide .imgWrap img {
+    width: auto;
+    height: auto;
+}
+#section2 .sec2_slide .swiper-slide .desc1 {
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 43px 0 22px;
+    font-family: NotoSansKR;
+    font-weight: 500;
+}
+#section2 .sec2_slide .swiper-slide .desc2 {
+    font-size: 16px;
+    font-weight: 800;
+}
+#section2 .sec2_slide .swiper-slide::before {
+	content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: solid #ab3284;
+    border-width: 1px 1px 0 0;
+    position: absolute;
+	right: 0;
+    top: 0;
+}
+/* #section2 {
 	width: 100%;
 	height: auto;
 	padding: 170px 0;
@@ -15,9 +73,16 @@
 #section2 .sec_desc .follow {
 	color: #AB3284;
 }
+#section2 .sec2_slide .swiper-slide {
+    display: flex;
+    /* background: #000; 
+    width: 100%;
+    margin-left: 63px;
+    position: relative;
+}
 #section2 .sec2_slide .swiper-slide .imgWrap {
     width: 370px;
-    height: 100%;
+    height: 434px;
     float: left;
     margin-right: 78px;
     position: relative;
@@ -30,11 +95,13 @@
     border: solid #ab3284;
     border-width: 1px 1px 0 0;
     position: absolute;
-	right: 64px;
+	right: 348px;
     top: 0;
 }
 #section2 .sec2_slide .swiper-slide .desc1 {
-	font-size: 22px;
+
+
+    font-size: 22px;
     line-height: 1.5;
     margin: 43px 0 22px;
 	font-family: NotoSansKR;
@@ -47,7 +114,7 @@
 }
 
 @media (max-width:1280px) {
-     #section2 {
+    #section2 {
         width: 100%;
         padding: 0;
     }
@@ -58,8 +125,8 @@
         margin-right: 20px;
     }
     #section2 .sec2_slide .swiper-slide {
-        width: 60% !important;
-        /* display: flex;  */
+        width: 100% ;
+        display: flex; 
         align-items: center; 
         justify-content: center;
     }
@@ -80,4 +147,4 @@
     #section2 .sec2_slide .swiper-slide .desc2 {
         font-size: 10px;
     }
-}
+} */

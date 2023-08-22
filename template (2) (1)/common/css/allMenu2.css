@@ -7,13 +7,16 @@
     height: 1080px;
     bottom: 0;
     background-color: #fff;
-    z-index: 9999999999;
+    z-index: 99999999;
     box-sizing: border-box;
 }
 .allMenu_wrap .all_image {
-	background-image: url(../images/all1.png);
+	/* background-color: #d9d9d9; */
+	background-image: url(../images/all5.png);
 	width: 50%;
-	height: auto;
+	height: 1080px;
+	background-size: cover;
+	background-repeat: no-repeat;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -34,7 +37,6 @@
 	position: absolute;
 	top: 50%;
 	left: 44%;
-	z-index: -1;
 	animation: circle 15s linear infinite;
 }
 .allMenu_wrap .k {
@@ -45,7 +47,7 @@
 	position: absolute;
 	top: 0;
 	top: 56%;
-	left: 47.5%;
+	left: 48%;
 }
 .allMenu_wrap .all__title .all__inner {
 	width: 40%;
@@ -55,7 +57,6 @@
 .allMenu_wrap .all__title .all__inner > ul li .all1 {
 	top: 140px;
 	cursor: pointer;
-	padding-top: 15px;
 	color: #929292;
 }
 .allMenu_wrap .all__title .all__inner > ul li .all1 .a_en {
@@ -68,7 +69,7 @@
 	font-size: 50px;
 	font-family: NotoSansKR;
 	opacity: 1;
-	font-weight: 500;
+	font-weight: 400;
 	position: absolute;
 	left: 160px;
 }
@@ -129,7 +130,7 @@
 	z-index: 9999999;
 	position: absolute;
 	right: 40px;
-	top: 43px;
+	top: 60px;
 	transform: translateY(-50%);
 	border-radius: 50%;
 	border: 1px solid #000000;
@@ -149,14 +150,14 @@
 	font-weight: 500;
 	font-family: NotoSansKR;
 	position: absolute;
-	top: 65%;
+	top: 60%;
 	left: 162px;
 }
 .allMenu_wrap .all__desc .all__sns {
 	color: #7b7b7b;
 	font-size: 15px;
 	position: absolute;
-	top: 80%;
+	top: 72%;
 	left: 150px;
 	width: 30%;
 }
@@ -211,10 +212,10 @@
 	.allMenu_wrap .all__title .all__inner {
 		margin-left: 0;
 	}
-	.allMenu_wrap .all__title .all__inner > ul li .all1 .a_en  {
+	.allMenu_wrap .all__title .all__inner > ul li .all1 .a_en {
 		font-size: 30px;
 	}
-	.allMenu_wrap .all__title .all__inner > ul li .all1 .a_ko  {
+	.allMenu_wrap .all__title .all__inner > ul li .all1 .a_ko {
 		font-size: 30px;
 		font-weight: 400;
 		left: 0;
@@ -222,6 +223,11 @@
 	.allMenu_wrap .all__close {
 		right: 20px;
 		top: 40px;
+		width: 96px;
+		height: 40px;
+	}
+	.allMenu_wrap .all__close::before {
+		font-size: 14px;
 	}
 	.allMenu_wrap .all__desc .all__sns {
 		font-size: 14px;
@@ -231,7 +237,7 @@
 		left: 5px;
 		z-index: 99;
 		color: #fff;
-		margin-top: 60px;
+		margin-top: 114px;
 	}
 	.allMenu_wrap .all__desc .all__text {
 		font-size: 18px;
@@ -261,9 +267,10 @@
 	.allMenu_wrap .all__title .all2 li {
 		margin-top: 0;
 		padding-left: 0;
+		font-size: 12px;
 	}
-	.allMenu_wrap .all__title .all__inner > ul li .all1:hover .a_ko, 
-	.allMenu_wrap .all__title .all__inner > ul li .all1:hover .a_en{
-
+	.allMenu_wrap .all__title .all__inner > ul li {
+		height: 40px;
+		margin-bottom: 40px;
 	}
 }
